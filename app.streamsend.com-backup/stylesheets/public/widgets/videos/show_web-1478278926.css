@@ -1,0 +1,49 @@
+* {
+  font-family: Arial, Helvetica
+}
+
+h3 {
+  color: #199BDB;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 14px;
+}
+
+p {
+  color: black;
+  font-size: 13px;
+  width: 230px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input, textarea {
+  padding: 8px;
+  width: 230px;
+}
+
+input {
+  margin: 0 0 16px;
+  font-size: 12px;
+}
+
+input.default, textarea.default, p {
+  color: #5F5F5F;
+}
+
+textarea {
+  height: 55px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+textarea#embed_code_textarea {
+  padding: 0;
+  width: 246px;
+}
+
+#video_content {
+  position: relative;
+}

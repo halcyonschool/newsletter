@@ -1,0 +1,62 @@
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#embed_content, #email_content {
+  width: 240px;
+}
+
+#embed_content {
+  height: 160px;
+}
+
+#email_content {
+  height: 134px;
+}
+
+#email_content.errors {
+  height: 204px;
+}
+
+input {
+  margin: 0 0 4px;
+}
+
+input, textarea, textarea#embed_code_textarea {
+  padding: 4px;
+  width: 200px;
+}
+
+textarea {
+  width: 202px;
+}
+
+textarea, textarea#embed_code_textarea {
+  margin: 0;
+  height: 30px;
+}
+
+textarea#embed_code_textarea {
+  padding: 0;
+  height: 76px;
+}
+
+#email_form, #embed_form, #email_thankyou {
+  width: 220px;
+  padding: 0;
+}
+
+#email_errors {
+  padding: 2px;
+  margin-left: -4px;
+}
+
+#email_error {
+  padding: 2px;
+}
+
+.button {
+  bottom: 30px;
+  left: 30px;
+}

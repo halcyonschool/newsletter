@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2378046a91","applicationID":"2102261","transactionName":"J19ZR0pcDQ5RS0kLDRBVUEFZRwgNWhYEEAwTQ1I=","queueTime":0,"applicationTime":826,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFQlRSCAECUlA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(12),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(13),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(14)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(14)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(14)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",c)}function i(t){y.push(t),h&&(w=-w,b.data=w)}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(14)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,g),g.prototype=p.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var w=1,b=document.createTextNode(w);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(12),c=t(13),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],13:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],14:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(13),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[g[n]];return f&&f.push([w,n,r,i]),i}}function p(t,e){y[t]=h(t).concat(e)}function h(t){return y[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var y={},g={},w={on:p,emit:n,get:m,listeners:h,context:e,buffer:v,abort:a,aborted:!1};return w}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(12),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=w.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(12),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(9);var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},g=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),w=e.exports={offset:a(),origin:v,features:{},xhrWrappable:g};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,7]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style></style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/social_bar_dialog.css">
+<title>Halcyon Newsletter 88: New Attendance Policy, Reminders, Invitations and News</title>    <meta name="description" content="We would like to invite all parents to join us at school this week for an evening reception to welcome our new Director, Barry Mansfield. We look forward to seeing you.">
+</head>
+<body marginheight="0" marginwidth="0" leftmargin="0" topmargin="0" bgcolor="#f0f0f0" link="#da2d20">
+<table width="100%">
+<tr><td id="streamsend_header"></td></tr>
+<tr><td id="streamsend_content">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f0f0f0" align="center"><tbody><tr>
+<td>
+				<table width="520" cellpadding="0" cellspacing="0" border="0" align="center"><tbody><tr>
+<td>
+							<div data-type="region">
+                            	<div data-type="block" style="border: none">
+                            		<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="10"></td></tr>
+<tr><td align="center" style="line-height: 13px; text-align: center"><font face="Arial, Helvetica, sans-serif" color="#a2a2a2" size="1" style="font-size: 11px; line-height: 13px">
+                                
+                                <a style="color: #a2a2a2; text-decoration: underline" href="../unsubscribe/23809777.html"><font color="#a2a2a2">Click here</font></a> to Unsubscribe<br><a href="23809777.html" style="color: #a2a2a2; text-decoration: underline"><font color="#a2a2a2">Click here</font></a> to view this email online 
+                                </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="9"></td></tr>
+</tbody></table>
+</div>
+                            </div>
+							<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/top.gif" align="left" vspace="0" hspace="0" width="520" height="7"></td></tr></tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td align="center" style="padding: 0 20px">
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                              <td bgcolor="#ffffff" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="13"></td>
+                              <td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                              </tr></tbody></table>
+<div data-type="region">
+                                <div data-type="block" style="border: none">
+                                	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                                        <td width="478" valign="top">
+                                            <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="29"></td>
+                                                                <td width="334" valign="top" style="font-size: 0; line-height: 0"><img src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/411375/images/__-5f29100fc04b5f2b0680eb3da567b12e.jpg" align="left" vspace="0" hspace="0" width="334" height="100" data-max-width="334" style="display: block" border="0" class=""></td>
+                                                                <td width="115" valign="top">
+                                                                
+                                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="18"></td></tr>
+<tr>
+<td>
+                                                                                <table cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="27" style="font-size: 0; line-height: 0"><a target="_blank" href="http://app.streamsend.com/c/23809777/16043/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fwww.facebook.com%2FHalcyonLondonInternationalSchool"><img src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/templates/1341/ico-facebook-3a960e3a27488a98af1e7c278876197c.gif" align="left" vspace="0" hspace="0" width="27" height="27" data-max-width="27" style="display: block" border="0" class=""></a></td>
+                                                                                        <td width="3"></td>
+                                                                                        <td width="27" style="font-size: 0; line-height: 0"><a target="_blank" href="http://app.streamsend.com/c/23809777/16045/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Ftwitter.com%2FHalcyonSchool"><img src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/templates/1341/ico-twitter-48e9b76cdcedc2ba3cfddf4f3beb3597.gif" align="left" vspace="0" hspace="0" width="27" height="27" data-max-width="27" style="display: block" border="0" class=""></a></td>
+                                                                                        <td width="3"></td>
+                                                                                        <td width="27" style="font-size: 0; line-height: 0"><a target="_blank" href="http://app.streamsend.com/c/23809777/16047/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fhalcyon-london-international-school"><img src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/templates/1341/ico-linkedin-e5ab760cd05ea189b0b62ef2b66ef475.gif" align="left" vspace="0" hspace="0" width="27" height="27" data-max-width="27" style="display: block" border="0" class=""></a></td>
+                                                                                    </tr></tbody></table>
+</td>
+                                                                        </tr>
+</tbody></table>
+</td>
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="14"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="478" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="29"></td></tr>
+</tbody></table>
+</td>
+                                        <td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                                      </tr></tbody></table>
+</div>
+                                </div>
+                                	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                                        <td width="478" valign="top">
+                                            <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="29"></td>
+                                                                <td width="421" valign="top">
+                                                                <div data-type="region">
+                                                                
+
+
+
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>1. EVENT&nbsp;<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important">REMINDER: Evening Reception to Welcome Barry Mansfield, incoming Director</div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>Date: 28 April 2015<br>
+</div>
+<div>Time: 1830-2000 </div>
+<div><br></div>
+<div>We would like to invite all parents to join us at school this week for an evening reception to welcome our new Director, Barry Mansfield. We look forward to seeing you.</div>
+<div><br></div>
+<div>Kindly RSVP to <a href="mailto:reception@halcyonschool.com"><font color="#0000ff">reception@halcyonschool.com</font></a>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>
+<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important">2. DATE&nbsp;</div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important">REMINDER: Half-day - staff training Wednesday 29 April</div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div>This Wednesday is a half-day for students due to staff in-service training. Students will be dismissed from Halcyon after period 4, at 1220. <b>Lunch will not be provided.&nbsp;</b>School resumes as normal on Thursday 30 April at 0830.</div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>
+<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important">3. DATE&nbsp;</div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important">REMINDER: Bank Holiday Monday 4 May</div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div><div>There is no school on Monday 4 May due to the Bank Holiday.</div></div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div><div style="display: inline !important">
+4. New Attendance &amp; Punctuality Policy</div></div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12px"><div>We ask that all parents read our newly revised <a href="http://app.streamsend.com/c/23809777/16049/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F509b8d20e4b0592f6710899e%2Ft%2F553798ede4b0c28f9b1f4896%2F1429706989895%2FStudentAttendancePolicy20150422.pdf"><font color="#0000ff">Attendance and Punctuality Policy</font></a>. Many <a href="http://app.streamsend.com/c/23809777/16051/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fnces.ed.gov%2Fpubs2009%2Fattendancedata%2Fchapter1a.asp"><font color="#0000ff">research studies</font></a> have indicated a correlation between student attendance and student achievement. This important document outlines our approach to ensuring that our students have the best possible opportunity to benefit from the learning experiences available at Halcyon, at the same time as complying with statutory requirements in the UK.<br>
+</div></span></div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div><div style="display: inline !important">
+5. Invitation for all parents: 14 May&nbsp;Student-Led Conferences</div></div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12px"><div>Date: Thursday 14 May<br>
+</div>
+<div>Time: 1430-1630</div>
+<div><br></div>
+<div>Come and view your child&rsquo;s work in progress in each subject. Meet your child(ren) at school at 1430 and they will take you on a tour of their learning and  demonstrate their work. Parents do not need to make appointments and can move freely from classroom to classroom with their child.</div>
+<div><br></div>
+<div><i>Students are encouraged to stay at school for the event even if their parents cannot attend but may leave school at normal dismissal time (1535).</i></div>
+<div><br></div>
+<div>Please RSVP to <a href="mailto:reception@halcyonschool.com"><font color="#0000ff">reception@halcyonschool.com</font></a>. If you have any questions, please contact <a href="mailto:lfritz@halcyonschool.com"><font color="#0000ff">Lori Fritz</font></a><font color="#666666">.</font>
+</div></span></div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div><div style="display: inline !important">
+6.&nbsp;<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">Invitation: Grade 9 Parent &amp; Students&rsquo; Meeting</div></div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div></div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12px"><div>Date: Thursday 14 May<br>
+</div>
+<div>Time: After the student-led conferences at 1630</div>
+<div>Location: Halcyon Hub</div>
+<div><br></div>
+<div>After the student-led conferences at 1630 Grade 9 and their parents are invited to attend a meeting to learn more about Grade 10 subject options and a preliminary information session about the IB Diploma Programme.</div></span></div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                                     
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img align="left" vspace="0" hspace="0" data-max-width="421" src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/411375/images/PP-5f47e57ffc4184fe3619e2d00bbe204c.jpg" height="187" width="421" style="display: block" border="0" class=""></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="11"></td></tr>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="text-align: center"><span style="font-size: 18px"><div style="display: inline !important"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px"><div style="text-align: left">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b></b><div>
+<div style="display: inline !important">
+<div style="display: inline !important">
+<div style="display: inline !important"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>7.&nbsp;<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">Grade 10 Personal Projects</div></div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b>
+</div> </strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></span></div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 12px; line-height: 18px"></span>
+</div>
+<div>
+<div>
+<div style="color: rgb(68, 68, 68)">
+<font color="#666666"><span style="font-size: 12px"></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="font-size: 12px">
+<font color="#666666"><span style="font-size: 12px"><div style="font-size: 12.222222328186px"><font size="3"><b></b></font></div></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>As part of our IBMYP programme, students are required to complete a Personal Project (PP). This PP is an important part of each student&rsquo;s graduation from the IBMYP and it offers an exciting opportunity for students to create a truly creative piece of work and to use the skills they have learnt during their time in the IBMYP. It is an opportunity for students to do something they really want to do, something they really like, and hence that they regard as personal.  The Personal Project is also an excellent preparation for the rigours of higher education, as the PP is often considered the younger sibling of the IB Diploma Extended Essay (an independent, self-directed piece of research, finishing with a 4000 word paper).<br>
+</div>
+<div><br></div>
+<div>Students complete a challenging project over the course of six months. They must complete a large amount of both primary and secondary research, meet regularly with their supervisors for support and they must keep a journal documenting the process. At the end of the project students show their work to a panel of teachers, produce a detailed report and show their work at an exhibition.</div>
+<div><br></div>
+<div>Students worked incredibly hard and not only learnt a lot about their topics they selected, (everything from interior design through to forensics), but learnt a lot about themselves and developed their approaches to learning.</div>
+<div><br></div>
+<div>Student Daphni said: &ldquo;<i>The majority of this year, Grade 10 did Personal Project and it was a great experience. I wanted to raise awareness for teenage mental health and although it was difficult to approach this, towards the end it was easier as more experience was gained and the final product (an online blog) was made."&nbsp;</i>
+</div>
+<div><i><br></i></div>
+<div style="text-align: center"><b><a href="http://app.streamsend.com/c/23809777/16053/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fblog%2F2015%2F4%2F26%2Fcelebration-of-learning-grade-10-personal-projects"><font color="#0000ff">Visit our blog to see&nbsp;Rachel's, Dylan's, Daphni's, Isla's, Celia's, Charlie's, Gwen's, Alexandra's and Dina's Personal Projects.</font></a></b></div>
+</div>
+</div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12.222222328186px"><div style="font-size: 12.222222328186px">
+<font color="#666666"></font>
+</div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><ul></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><div>
+<font color="#0000ff"></font>
+</div></div>
+</div>
+<div>
+<div style="color: rgb(68, 68, 68)"></div>
+</div>
+<div style="color: rgb(68, 68, 68)">
+<span style="font-size: 12px"></span>
+</div>
+</div>
+</div>
+<div>
+<a href="http://app.streamsend.com/c/23809777/16055/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fblog%2F2014%2F2%2F8%2Fgrade-9-theatre-trip-wicked-at-apollo-theatre-london"><font color="#0000ff"></font></a>
+</div>
+
+                                                                        </font></td></tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="31"></td></tr></tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                                     
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img align="left" vspace="0" hspace="0" data-max-width="421" src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/411375/images/G8CP-db28433ff7aa117df7f819823729e935.jpg" height="187" width="421" style="display: block" border="0" class=""></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="11"></td></tr>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="text-align: center"><span style="font-size: 18px"><div style="display: inline !important"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px"><div style="text-align: left">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b></b><div>
+<div style="display: inline !important">
+<div style="display: inline !important">
+<div style="display: inline !important"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>8.&nbsp;<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">Grade 8 Community Projects</div></div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b>
+</div> </strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></span></div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 12px; line-height: 18px"></span>
+</div>
+<div>
+<div>
+<div style="color: rgb(68, 68, 68)">
+<font color="#666666"><span style="font-size: 12px"></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="font-size: 12px">
+<font color="#666666"><span style="font-size: 12px"><div style="font-size: 12.222222328186px"><font size="3"><b></b></font></div></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>In a similar vein to Grade 10, Grade 8 did a fantastic job on their Community Projects. The community project is a culminating example of inquiry because the work reflects students&rsquo; ability to initiate, manage and direct their own inquiry. The inquiry process in IBMYP projects involves students in a wide range of activities to extend their knowledge and understanding and to develop their skills and attitudes. These student-planned learning activities include:</div>
+<div><br></div>
+<div>&bull; Deciding what they want to learn about, identifying what they already know, and discovering what they will need to know to complete the project</div>
+<div>&bull; Creating proposals or criteria for their project, planning their time and materials, and recording developments of the project</div>
+<div>&bull; Making decisions, developing understandings and solving problems, communicating with others, and creating a product or developing an outcome.</div>
+<div>&bull; Evaluating the product/outcome and reflecting on their project and their learning.</div>
+<div><br></div>
+<div>Please find more information about their projects <a href="http://app.streamsend.com/c/23809777/16057/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fwww.smore.com%2F9t5pv"><font color="#0000ff">here</font></a>.</div>
+</div>
+</div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12.222222328186px"><div style="font-size: 12.222222328186px">
+<font color="#666666"></font>
+</div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><ul></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><div>
+<font color="#0000ff"></font>
+</div></div>
+</div>
+<div>
+<div style="color: rgb(68, 68, 68)"></div>
+</div>
+<div style="color: rgb(68, 68, 68)">
+<span style="font-size: 12px"></span>
+</div>
+</div>
+</div>
+<div>
+<a href="http://app.streamsend.com/c/23809777/16059/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fblog%2F2014%2F2%2F8%2Fgrade-9-theatre-trip-wicked-at-apollo-theatre-london"><font color="#0000ff"></font></a>
+</div>
+
+                                                                        </font></td></tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="31"></td></tr></tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>9.&nbsp;<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important">Noelia is now&nbsp;Deputy Chief Examiner for the IB Spanish A Lang &amp; Lit</div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<b></b>
+</div>
+<div>Noelia Zago, Halcyon&rsquo;s Diploma Programme Co-ordinator and Spanish teacher, has accepted the post of Deputy Chief Examiner for Spanish A Language and Literature (don't worry - she is not leaving Halcyon!).  This is a huge feather in her cap and  further reinforces Halcyon&rsquo;s reputation as a highly influential force in IB development and delivery!<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>10.&nbsp;<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important">Halcyon's Student Council reminds you of: International Student ID Cards - <font color="#ff0000">extended deadline 01 May</font>
+</div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div><span style="font-size: 12px"><span style="font-size: 12px">
+<span style="font-size: 12px"><span style="font-size: 12px"><div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<b><div>
+<b>What are student IDs?</b><br>
+</div></b>
+</div>
+<div>ISIC (International School ID Cards) is a company which distributes IDs for international students. The cards are distributed in over 130 countries for students aged 12 and up. The cards contains a photo, first name, last name and date of birth as well as the school&rsquo;s name.&nbsp;If 20 students sign up the cost will be &pound;8. If 50 sign up it will be &pound;7.</div>
+<div><br></div>
+<div>
+<b>What are the benefits?</b><br>
+</div>
+<div>There are many benefits of the ID card. For example, discounts in local restaurants, museums, cinemas, clothes and office supplies shops, bookstores, public transport, and more. They are also good for general ID too.</div>
+<div><br></div>
+<div>If you would like your student to have a card, you can apply by notifying student council through this form <a href="http://app.streamsend.com/c/23809777/16061/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1r88RzKY6ZaA5-vTSLOR2sV-TGW3zroGYXHzHg_zFUC0%2Fviewform"><font color="#0000ff">here</font></a>. As this is a student-led initiative, Halcyon's student council will be organizing these directly. <b>Deadline for notifying is Friday 01 May. </b>
+</div>
+<div><br></div>
+<div>The cost is &pound;7 per card (a &pound;5 saving over doing it yourself). The Halcyon Student Council&rsquo;s treasurer, Gwen (Grade 10), will be collecting the cash for payment from each advisory group next week.</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<font color="#666666"></font>
+</div>
+</div>
+</div> </span></span>
+</span></span></div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                                     
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img align="left" vspace="0" hspace="0" data-max-width="421" src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/411375/images/Saatchi-843bef467a0883d443374883d7afb939.jpg" height="421" width="421" style="display: block" border="0" class=""></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="11"></td></tr>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="text-align: center"><span style="font-size: 18px"><div style="display: inline !important"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px"><div style="text-align: left">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b></b><div>
+<div style="display: inline !important">
+<div style="display: inline !important">
+<div style="display: inline !important"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div>
+<div>11. Grade 10 visit the Saatchi Gallery</div> </div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></span></div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 12px; line-height: 18px"></span>
+</div>
+<div>
+<div>
+<div style="color: rgb(68, 68, 68)">
+<font color="#666666"><span style="font-size: 12px"></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="font-size: 12px">
+<font color="#666666"><span style="font-size: 12px"><div style="font-size: 12.222222328186px"><font size="3"><b></b></font></div></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div><div>Grade 10 had a most inspiring Gallery visit on Thursday morning at the Saatchi Gallery.  They spent the morning looking at a variety of work from the Pangaea II exhibition, which had works from Africa and Latin America.  This gave the students an opportunity to see how these artists had used a variety of materials to express themselves about their own experiences.  The students were able to explore whether the different cultures were reflected in their works.  Grade 10 felt very inspired by this wonderful Gallery and came back to school with many ideas of their own for their next unit.<br>
+</div></div>
+</div>
+</div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12.222222328186px"><div style="font-size: 12.222222328186px">
+<font color="#666666"></font>
+</div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><ul></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><div>
+<font color="#0000ff"></font>
+</div></div>
+</div>
+<div>
+<div style="color: rgb(68, 68, 68)"></div>
+</div>
+<div style="color: rgb(68, 68, 68)">
+<span style="font-size: 12px"></span>
+</div>
+</div>
+</div>
+<div>
+<a href="http://app.streamsend.com/c/23809777/16063/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fblog%2F2014%2F2%2F8%2Fgrade-9-theatre-trip-wicked-at-apollo-theatre-london"><font color="#0000ff"></font></a>
+</div>
+
+                                                                        </font></td></tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="31"></td></tr></tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>
+<span id="goog_1047766032"></span><div>12. <div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">Digital Corner with <a href="mailto:ccrannell@halcyonschool.com"><font color="#0000ff">Cindy Crannell</font></a>
+</div></div></div></div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+<span id="goog_1047766033"></span>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<div>
+<div style="font-size: 12px">
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div></div>
+</div>
+<div>
+<div>Remember to update your Apple iOS and OSX devices as there was an update released.  </div>
+<div><br></div>
+<div>
+<a href="http://app.streamsend.com/c/23809777/16065/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Ftheinnovativeeducator.blogspot.co.uk%2F2015%2F04%2Fwhy-you-should-let-students-have.html"><font color="#0000ff">Innovative Educator's blog</font></a> post by <a href="http://app.streamsend.com/c/23809777/16067/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Ftheinnovativeeducator.blogspot.co.uk%2Fp%2Fabout-me.html"><font color="#0000ff">Lisa Neilson</font></a> debates the topic of screentime with a "Quality, Not Quantity" point of view. She tackles all the hard questions we are all asking and gives specific examples to support her viewpoint. A recent <a href="http://app.streamsend.com/c/23809777/16069/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fwww.bbc.co.uk%2Fpodcasts%2Fseries%2Faitm"><font color="#0000ff">BBC radio programme</font></a> also looked at the growing body of research on this topic.</div>
+</div>
+<div>
+<div style="font-size: 11.9999990463257px"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<font color="#666666"></font>
+</div>
+</div>
+</div> 
+</div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+<div data-type="block" style="border: none">
+                                                     
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img align="left" vspace="0" hspace="0" data-max-width="421" src="http://production-streamsend.ezpublishing.netdna-cdn.com/assets/411375/images/trips-e11eb06f5ee83174f084bb4ce50a9ae9.png" height="187" width="421" style="display: block" border="0" class=""></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="11"></td></tr>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<span style="font-size: 18px; font-weight: normal"><a href="goog_1098279896.html"></a></span><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div style="display: inline !important">
+<a href="goog_1098279896.html">
+<span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div>
+<a href="goog_1098279896.html"><span style="font-size: 18px"></span></a><div style="text-align: center"><span style="font-size: 18px"><div style="display: inline !important"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px"><div style="text-align: left">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"></b><div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong></strong></b></strong></b></strong></b></b><div style="display: inline !important">
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b><strong><strong><b><strong></strong></b></strong></strong></b></b></b><div>
+<div style="display: inline !important">
+<div style="display: inline !important">
+<div style="display: inline !important"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>13. UPCOMING TRIP: Grade 7 to National Gallery</div> </strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></span></div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<span style="font-size: 12px; line-height: 18px"></span>
+</div>
+<div>
+<div>
+<div style="color: rgb(68, 68, 68)">
+<font color="#666666"><span style="font-size: 12px"></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="font-size: 12px">
+<font color="#666666"><span style="font-size: 12px"><div style="font-size: 12.222222328186px"><font size="3"><b></b></font></div></span>
+</font>
+</div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>Date: Monday 27 April<br>
+</div>
+<div>Depart: 0915</div>
+<div>Return: 1315</div>
+<div>Location: <a href="http://app.streamsend.com/c/23809777/16071/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fwww.nationalgallery.org.uk%2F"><font color="#0000ff">National Gallery</font></a>&nbsp;</div>
+<div><br></div>
+<div>
+<div>Grade 7 will take the bus down to Trafalgar Square to the National Gallery with Sue Dance and Gareth Jones to explore the Impressionist and Post-Impressionist paintings. Students will have the opportunity to discover how these artists used scientific colour theories which began the Modern Art movement and a new way of seeing colour.  This is part of our Inter-Disciplinary Unit with Visual Arts and Science on Colour and Light.</div>
+<div><br></div>
+</div>
+<div>Students will need to bring:</div>
+<div>
+<ul>
+<li>Fully-charged iPad (rather than a phone)<br>
+</li>
+<li>Topped-up Oyster card</li>
+<li>Money for a snack.</li>
+</ul>
+<div><i>Packed lunches will be supplied by the school.<br></i></div>
+<div><i><br></i></div>
+<div>If you have any questions, please contact <a href="mailto:sdance@halcyonschool.com"><font color="#0000ff">Sue Dance</font></a>.<br>
+</div>
+<div><br></div>
+</div>
+</div>
+<div>
+<b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>UPCOMING TRIP: Grade 9 to Science Museum</strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b><br>
+</div>
+<div>
+<div>Date: Thursday 30 April<br>
+</div>
+<div>Depart: 1200</div>
+<div>Return: 1530</div>
+<div><br></div>
+<div><div>Grade 9 students are visiting the "Who am I" exhibition at the Science Museum about genetics and identity and, while at the museum, they will attend a debate on the subject of DNA.</div></div>
+<div><br></div>
+<div>Students will need to bring:</div>
+<div><ul>
+<li>Fully-charged iPads<br>
+</li>
+<li>Oyster card<br>
+</li>
+<li>Lunch money (students have chosen to buy their lunch off-campus) </li>
+</ul></div>
+<div><i></i></div>
+</div>If you have any questions, please contact <a href="mailto:lfritz@halcyonschool.com"><font color="#0000ff">Lori Fritz</font></a>.<div>
+</div>
+</div>
+</div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size: 12.222222328186px"><div style="font-size: 12.222222328186px">
+<font color="#666666"></font>
+</div></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><ul></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px"><div>
+<font color="#0000ff"></font>
+</div></div>
+</div>
+<div>
+<div style="color: rgb(68, 68, 68)"></div>
+</div>
+<div style="color: rgb(68, 68, 68)">
+<span style="font-size: 12px"></span>
+</div>
+</div>
+</div>
+<div>
+<a href="http://app.streamsend.com/c/23809777/16073/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fblog%2F2014%2F2%2F8%2Fgrade-9-theatre-trip-wicked-at-apollo-theatre-london"><font color="#0000ff"></font></a>
+</div>
+
+                                                                        </font></td></tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="31"></td></tr></tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div>
+<span id="goog_1047766032"></span><div>14.&nbsp;<b><strong></strong></b><div style="display: inline !important"><b><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">Additional Open House dates: Help spread the word!</div></div></div></strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></div>
+</div>
+<span id="goog_1047766033"></span>
+</div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+<div>
+<div style="font-size: 12px">
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div></div>
+</div>
+<div>
+<div>Please share these new Open House dates with any interested friends, colleagues or family:<br>
+</div>
+<div><br></div>
+<div style="text-align: center">06 May and 02 June </div>
+<div style="text-align: center">1000-1130</div>
+<div><br></div>
+<div>We also invite you, as parents, to come and see how we present the school to prospective parents. We welcome your feedback. RSVP: <a href="mailto:join@halcyonschool.com"><font color="#0000ff">join@halcyonschool.com</font></a>
+</div>
+</div>
+<div>
+<div style="font-size: 11.9999990463257px"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px">
+<font color="#666666"></font>
+</div>
+</div>
+</div> 
+</div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        <b><strong>
+<span id="goog_271664780"></span><div><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>
+<div><b style="font-family: Arial, Helvetica, sans-serif; font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><b style="font-size: 17.7777786254883px; line-height: 23.9999980926514px"><strong><b><strong><b><strong><div style="display: inline !important"><b><strong><strong><b><strong>15. HPC News</strong></b></strong></strong></b></div></strong></b></strong></b></strong></b></b></b></b></b></div>
+</strong></b></strong></strong></b></div></strong></b></strong></b></strong></div>
+<span id="goog_271664781"></span>
+</strong></b>
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+<div>
+
+<div>
+<div>
+<div style="font-size: medium; font-weight: bold">
+<b>i. Thank you!</b>
+</div>
+<div style="font-size: medium">
+<div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><span style="font-size: 12.222222328186px"><font color="#666666">Thanks to all the parents who attended the HPC General Meeting this past Monday.  It was great to see so many faces and to hear from our Student Council, Duncan Partridge, Rita Halbright, Cindy Crannell, and the HPC Board members who work so hard to build our parent community at Halcyon.  A warm and inviting community helps make the Halcyon experience memorable for the school&rsquo;s students and their families.  The HPC brings together hard-working and enthusiastic parent volunteers to enrich our community and build enduring relationships.  Whether you have limited availability or are someone who is able to give more time - there are numerous volunteer opportunities from which to choose.  We welcome your participation at any level and appreciate your commitment to helping Halcyon be the best.  If you would like to find out more about the HPC and how you can get involved, please contact </font><a href="mailto:jenny.h.garcia@icloud.com"><font color="#0000ff">Jenny Garcia</font></a><font color="#666666"> or </font><a href="mailto:landmpowell@yahoo.co.uk"><font color="#0000ff">Lisa Powell</font></a><font color="#666666">.</font></span></div></div></div></div></div></div>
+<br>
+</div>
+<div style="font-size: medium"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><span style="color: rgb(102, 102, 102); font-size: 12.222222328186px"><br></span></div></div></div></div></div></div></div>
+<div><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important"><div style="display: inline !important">
+<div style="color: rgb(102, 102, 102)"><font size="3"><b>ii. Grade Representatives for 2015-2016</b></font></div>
+<div style="font-size: 12.222222328186px">
+<span style="font-size: 12.222222328186px"><font color="#666666">As a result of the growth in the student body, the HPC has decided to introduce Grade Reps for 2015-16.  Grade Reps will be responsible for organizing a grade coffee/gathering once per term and facilitate communication on an as-needed basis between Halcyon, the HPC and parents in your child&rsquo;s Grade.  If you are interested in becoming a grade rep, please contact </font><a href="mailto:jenny.h.garcia@icloud.com" style="font-size: 12.222222328186px"><font color="#0000ff">Jenny Garcia</font></a><font color="#666666">.</font></span><br>
+</div>
+<br>
+</div></div></div></div></div></div></div>
+</div>
+<div>
+<div style="font-size: 12.222222328186px"><font style="font-size: 12.222222328186px" color="#666666"><div style="font-size: 12.222222328186px">
+<b style="font-size: medium"><b>iii. Hyde Park workout for Halcyon <u>students</u></b></b><br>
+</div>
+<div style="font-size: 12.222222328186px">
+<div style="font-size: 12.222222328186px"><span style="font-size: medium"><div style="font-size: 12.222222328186px"><font color="#666666" style="font-size: 12.222222328186px"><div style="font-size: 12.222222328186px"><span style="font-size: medium"><div style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px"><b>Saturdays 1300-1400</b></span></div></span></div></font></div></span></div>Meeting spot: Queen Victoria statue on bike/walking path in front of Kensington Palace.</div>
+<div><span style="font-size: 12.222222328186px"><br></span></div>
+<div>
+<span style="font-size: 12.222222328186px">Equinox club trainer David Warden will offer his fun workouts in Hyde Park for Halcyon students every Saturday from 1300-1400.&nbsp;</span>
+</div>
+<div><span style="font-size: 12.222222328186px"><br></span></div>
+<div><span style="font-size: 12.222222328186px">&pound;12 per student. Bring money on the day for Stacey to collect for David.</span></div>
+<div><span style="font-size: 12.222222328186px"><br></span></div></font></div>
+<div><font><div style="font-size: 12.222222328186px">
+<font color="#666666">Sign up </font><font color="#0000ff"><a href="http://app.streamsend.com/c/23809777/16075/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1rjzvWkLoozJarMvNQ4emD6R5W0etraSF4d0TLBur9c0%2Fedit%3Fusp%3Dsharing"><font color="#0000ff">here</font></a> </font><font color="#666666">or just show up</font><span style="color: rgb(102, 102, 102); font-size: 12.222222328186px">.</span>
+</div>
+<div style="font-size: 12.222222328186px"><font color="#666666"><br></font></div>
+<div style="font-size: 12.222222328186px">
+<b style="font-size: medium">iv. Boot Camp Workouts for Halcyon <u>Parents</u> in Holland Park</b><br>
+</div>
+<div style="font-size: 12.222222328186px">
+<span style="font-size: 12.222222328186px">Enjoy the nice spring weather with a boot-camp style workout in Holland Park with other Halcyon parents!  If you are interested in forming a small group, please contact <a href="mailto:landmpowell@yahoo.co.uk"><font color="#0000ff">Lisa Powell</font></a>.&nbsp;The trainer is available on Mondays or Fridays at 1000 and will run you through a great, tough, boot-camp style workout.  Pricing will vary, but a guide is &pound;25/hour/person.  Working out is always more fun with partners!</span><br>
+</div>
+<div style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px"><br></span></div>
+<div>
+<div><font size="3"><b>v. Parking Signs for Drop-off/Pick-Up</b></font></div>
+<div style="font-size: 12.222222328186px">
+<span style="font-size: 12.222222328186px">Halcyon is able to offer parents a laminated parking sign to display on your car dashboard when you need to run into the school for drop-off or pick-up.  With the displayed sign you are allowed to park on a single yellow line (not double yellow!) outside the school for a maximum of 10 minutes for the purposes of dropping off/collecting your child during school hours.   You must be parked right outside the school.   If you would like a parking sign, please contact <a href="mailto:reception@halcyonschool.com"><font color="#0000ff">Emily</font></a> at Reception and provide your car registration plate number.  Please note that, in the unlikely event of a parking violation, THE SCHOOL WILL NOT BE HELD LIABLE.</span><br>
+</div>
+<div style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px"><br></span></div>
+<div>
+<div><font size="3"><b>vi. Excursion to Kew Gardens - London&rsquo;s largest UNESCO World Heritage Site</b></font></div>
+<div style="font-size: 12.222222328186px"><b>Thursday 28 May</b></div>
+<div style="font-size: 12.222222328186px"><b>1000-1400</b></div>
+<div style="font-size: 12.222222328186px"><br></div>
+<div style="font-size: 12.222222328186px">Enjoy a day immersed in centuries of science, horticulture and history at the world&rsquo;s most famous garden!  Kew Gardens boasts acres of beautiful landscaped grounds featuring plant specimens from around the world.  If you would like to participate in this trip, please sign up <a href="http://app.streamsend.com/c/23809777/16077/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F11C4m2l0UQvJuO_xEyFAYxJV3FULfFJ33YLZ0-WMNVgg%2Fedit%3Fusp%3Dsharing"><font color="#0000ff">here</font></a>.</div>
+<br>
+</div>
+<div><font size="3"><b>vii. HPC Board and Committees for 2015-2016</b></font></div>
+<div>The HPC is getting ready for the 2015-16 school year and we need your help!  We already have some volunteers to serve on committees and hold board positions, however, there are plenty of opportunities remaining for those who would like to volunteer.  Please see the list <a href="http://app.streamsend.com/c/23809777/16079/ZMYvAsw/2igrftvvte?redirect_to=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F15KsIcA1GpVNmVAyUd9aWnc5NRKVyw74KT_ss9_nDC1E%2Fedit%3Fusp%3Dsharing"><font color="#0000ff">here</font></a> and contact <a href="mailto:jenny.h.garcia@icloud.com" style="font-size: 12.222222328186px"><font color="#0000ff">Jenny Garcia</font></a>&nbsp;if you are interested in volunteering.<br>
+</div>
+<div><br></div>
+<div>
+<div><font size="3"><b>viii. Parent-Interest Clubs</b></font></div>
+<div>We have several interest-based clubs and would like to add more members or new clubs.  If you have an interest in joining a club, please contact the organizer listed below.  If you have an interest and want to share it with others, please send your suggestions for new clubs to <a href="mailto:jenny.h.garcia@icloud.com" style="font-size: 12.222222328186px"><font color="#0000ff">Jenny Garcia</font></a>.<br>
+</div>
+<div><br></div>
+<div>
+<b>Cooking Club</b> - Organizer - <a href="mailto:jenny.h.garcia@icloud.com"><font color="#0000ff">Jenny Garcia</font></a>
+</div>
+<div>Knitting Club - Organizer - <a href="mailto:et2056@gmail.com"><font color="#0000ff">Elizabeth Tran</font></a>
+</div>
+<div>Movie Club - Organizer - <a href="mailto:pilonarenas@gmail.com"><font color="#0000ff">Lucy Arenas</font></a>
+</div>
+<div>Lunch Club - Organizer - <a href="mailto:nitahome@hotmail.co.uk"><font color="#0000ff">Nita Jethwa Gandham</font></a>.</div>
+<br>
+</div>
+<div>
+<div><b><font size="3">ix. School Food Action Committee - Parent Volunteer Needed!</font></b></div>
+<div>As reported in last week&rsquo;s newsletter, the school is forming an advisory committee to take action to promote Halcyon&rsquo;s Food Policy.  The committee will be comprised of members from all of Halcyon&rsquo;s constituent groups - students, parents, staff and the School Board. The committee will meet and discuss all aspects of food culture at school from how to promote it, to how to integrate it with curriculum, to how to maintain a high standard.  Recommendations will be made to the Head and action will be taken.  <b>We are looking for 2 parent volunteers to join this group.</b>  The commitment is one academic year, meeting twice a Term.<br>
+</div>
+<div><br></div>
+<div>If you are a collaborative, critical thinking team player who loves food and wellbeing, this group is for you.  <b>Please submit your name to the HPC by 30 April.</b>
+</div>
+<br>
+</div>
+<div style="color: rgb(102, 102, 102); font-size: 12.222222328186px; font-weight: bold"><font size="3"><b>x. Halcyon Musical Showcase</b></font></div>
+<div style="font-size: 12.222222328186px">
+<span style="color: rgb(102, 102, 102); font-size: 12.222222328186px"><div><b>Monday 1 June </b></div>
+<div><b>1400-1530</b></div>
+<div><br></div>Students, staff and parents will have the opportunity to celebrate the talent of our student community during the afternoon School Assembly. Artists of all genres are welcome to perform alongside our school string ensemble and choir. Supported rehearsal space will be made available every Wednesday and Thursday at lunchtime in Room F04 so that performers can get together as duos or seek piano accompaniment. Students who study music or dance, either at Halcyon or outside of school, who would like to share their artistry should please contact </span><font color="#0000ff" style="font-size: 12.222222328186px"><a href="mailto:kcrkv@yahoo.com" style="font-size: 12.222222328186px"><font color="#0000ff">Cathy Smith</font></a> <span style="color: rgb(102, 102, 102); font-size: 12.222222328186px">and add their selections to the Concert Programme. Looking forward to a wonderful afternoon!</span></font>
+</div>
+<br>
+</div>
+<div>
+<div style="color: rgb(102, 102, 102); font-size: 12.222222328186px; font-weight: bold"><font size="3"><b>xi. MUN Conference at Halcyon - Breakfast and Registration Table</b></font></div>
+<div style="color: rgb(102, 102, 102); font-size: 12.222222328186px; font-weight: bold"><b>Thursday 18 - Friday 19 June</b></div>
+<div style="color: rgb(102, 102, 102); font-size: 12.222222328186px; font-weight: bold"><br></div>
+<div><font size="2" face="arial, sans-serif"><span style="font-size: 12.222222328186px"><font color="#666666">Halcyon will once again be hosting a MUN conference which will bring numerous schools to Halcyon for the 2-day event. The HPC will run the registration table each morning and supply breakfast treats and drinks for the 130 attendees. We will need volunteers and food donations. Parents would be welcome to watch some of the proceedings. If you are interested in helping with this event, please contact </font><a href="mailto:bernarditahudson@me.com"><font color="#0000ff">Berna Hudson</font></a><font color="#666666"> or </font><a href="mailto:abeck23810@aol.com"><font color="#0000ff">Anja Beck</font></a><font color="#666666">.</font></span></font></div>
+<br>
+</div>
+<div>
+<div><div style="font-size: 12.222222328186px">
+<b style="font-size: medium">xii. Teacher and Staff Appreciation Afternoon Tea</b><br>
+</div></div>
+<div style="font-size: 12.222222328186px"><b>Monday 22 June 1500</b></div>
+<div style="font-size: 12.222222328186px"><br></div>
+<div style="font-size: 12.222222328186px">The HPC will be treating the teachers and staff to a lovely afternoon tea for their last weekly staff meeting of the academic year. The HPC would like to ask parents to donate food and will be sending out a sign-up sheet soon. <span style="font-size: 12.222222328186px">More information to come from co-chairs <a href="mailto:tlw0708@yahoo.com"><font color="#0000ff">Tara Qatsha</font></a> and <a href="mailto:kcrkv@yahoo.com"><font color="#0000ff">Cathy Smith</font></a>.</span>
+</div>
+</div>
+<div style="font-size: 12.222222328186px">
+<div style="font-size: 12.222222328186px"><br></div>
+</div>
+<div style="font-size: 12.222222328186px">
+<div style="font-size: 12.222222328186px">
+<font color="#666666"><b style="font-size: medium">xiii. HPC on Facebook</b><br></font>
+</div>
+<div style="font-size: 12.222222328186px">
+<span style="color: rgb(102, 102, 102); font-size: 12.222222328186px">The HPC is on Facebook!  Please search for "Halcyon Parent Community" and request to join our closed group.  We hope the Facebook page will serve as another communication tool for parents and also as a resource for getting tips and advice on all things London from our well-connected parent community.</span>
+</div>
+<div style="font-size: 12.222222328186px"><br></div>
+</div></font></div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div style="font-size: 12.222222328186px"><div><span id="goog_621120929"></span></div></div>
+</div>
+<div style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px"><div style="font-size: 12px">
+<div style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px"><span style="font-size: 12.222222328186px">
+<div style="text-align: center"><i>If you are interested in learning more about the HPC or taking on a leadership role for 2015/16, please contact <i style="font-size: 12.222222328186px; text-align: center"><div style="display: inline !important; font-size: 12px">
+<a href="mailto:jenny.h.garcia@icloud.com" style="color: rgb(0, 0, 255)">Jenny Garcia</a> <i style="font-size: 12.222222328186px"><font color="#666666">or</font> <a href="mailto:landmpowell@yahoo.co.uk"><font color="#0000ff">Lisa Powell</font></a></i>
+</div></i>.&nbsp;</i></div>
+<div style="text-align: center"><i><br></i></div>
+<div style="text-align: center"><i>&nbsp;The HPC is an all-volunteer group that works to support community life at Halcyon for all students, parents and staff.  We welcome any and all support.</i></div></span></span></div>
+</div></span></div>
+</div>
+</div>
+
+</div>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-type="block" style="border: none">
+                                            
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="line-height: 24px; text-align: left"><font face="'Trebuchet MS', Helvetica, sans-serif" size="2" style="font-size: 18px; line-height: 24px" color="#636466">
+                                                                        
+<b><span id="goog_271664780"></span></b><div><div style="display: inline !important">
+<div><div><div><div style="text-align: center">
+<a href="http://app.streamsend.com/c/23809777/16081/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fcurrent" style="font-weight: bold"><font color="#0000ff">Calendar</font></a><b>&nbsp;</b><span style="font-size: small; text-align: center"><font face="arial, sans-serif">password: 33Seymour</font></span>
+</div></div></div></div>
+<div style="text-align: center">
+<a href="http://app.streamsend.com/c/23809777/16083/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fhalcyon-directory" style="font-weight: bold"><font color="#0000ff">Directory</font></a><b>&nbsp;</b><font size="2" face="arial, sans-serif">password: 33Seymour</font>
+</div>
+<div style="text-align: center">
+<a href="http://app.streamsend.com/c/23809777/16085/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fhalcyonschool.com%2Fhalcyon-handbook"><font face="trebuchet ms, sans-serif" color="#0000ff"><b>Handbook</b></font></a> <font size="2" style="font-family: arial, sans-serif">no password required</font>
+</div>
+</div></div>
+<b><span id="goog_271664781"></span></b>
+
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="7"></td></tr>
+<tr><td style="line-height: 18px; text-align: left"><font face="Arial, Helvetica, sans-serif" size="2" style="font-size: 12px; line-height: 18px" color="#636466">
+                                                                        
+                                                                        <div>
+<div>
+<span style="font-size: 12px; line-height: 18px"></span>
+</div>
+<div><span style="font-size: 12px">
+<span style="font-size: 12px"><div>
+<span style="font-size: 12px"></span>
+</div>
+<div>
+<div><span style="font-size: 12px">
+<span id="goog_1933811582"></span><div>
+<div>
+<div>
+<div>
+<div><br></div>
+</div>
+</div>
+</div>
+<div> </div>
+</div>
+<span id="goog_1933811583"></span>
+</span></div>
+</div>
+<div>
+<span style="font-size: 12px"></span>
+</div></span>
+</span></div>
+<div>
+<font color="#444444"></font>
+</div>
+</div>
+                                                                        
+                                                                        </font></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="26"></td></tr>
+</tbody></table>
+<table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td>
+                                                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
+<td width="421" valign="top">
+                                                                    
+                                                              </td>
+                                                                
+                                                            </tr></tbody></table>
+</td>
+                                                </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/content-separator.gif" align="left" vspace="0" hspace="0" width="421" height="1"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="20"></td></tr>
+</tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                                            
+                                            
+
+                                            
+
+
+                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                                            </div>
+                                                                    
+                                                                    
+                                            
+                                              </td>
+                                                                <td width="28"></td>
+                                                            </tr></tbody></table>
+</td>
+                                                </tr></tbody></table>
+</td>
+                                        <td width="1" bgcolor="#c2c2c2" style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" align="left" vspace="0" hspace="0" width="1" height="1"></td>
+                                      </tr></tbody></table>
+</td>
+                            </tr></tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/bottom.gif" align="left" vspace="0" hspace="0" width="520" height="14"></td></tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="23"></td></tr>
+</tbody></table>
+<div data-type="region">
+                                <div data-type="block" style="border: none">
+                                	<table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
+<tr>
+<td align="center" style="line-height: 17px; text-align: center"><font face="Arial, Helvetica, sans-serif" color="#a2a2a2" size="1" style="font-size: 11px; line-height: 17px">
+                                        
+                                            You have received this because you asked to be on our mailing list.<div>
+<a style="color: #a2a2a2; text-decoration: underline" href="../unsubscribe/23809777.html">Click here<font color="#a2a2a2"></font></a> to unsubscribe your email address from this list.<br><a style="color: #a2a2a2; text-decoration: underline" href="../../../b/CjHzL7e/p/ZMYvAsw/shares/new.html">Click here<font color="#a2a2a2"></font></a> to send this email to a friend. <br>
+                                            Address: 33 Seymour Place London W1H 5AU | Telephone: +44 (0)20 7258 1169&nbsp;</div>
+<div>
+                                            Copyright &copy; 2013 <a href="http://app.streamsend.com/c/23809777/16087/ZMYvAsw/2igrftvvte?redirect_to=http%3A%2F%2Fwww.halcyonschool.com">www.halcyonschool.com</a>
+</div>
+Halcyon London International School, a charitable company limited by guarantee registered <br>in England &amp; Wales  company number: 08120017 charity number: 1150105. <br>Registered office address: 1 Lombardy Place, London W2 4AU.
+
+                                        </font></td>
+                                    </tr>
+<tr><td style="font-size: 0; line-height: 0"><img src="../../../../../images/templates/1341/blank.gif" width="1" height="22"></td></tr>
+</tbody></table>
+</div>
+                            </div>
+					  </td>
+					</tr></tbody></table>
+</td>
+		</tr></tbody></table>
+</td></tr>
+<tr><td id="streamsend_footer"></td></tr>
+</table>
+<img src="../../../../../v/23809777/ZMYvAsw/2igrftvvte.gif"><link rel="stylesheet" href="../../../../../stylesheets/public/widgets/videos/form_popup.css" type="text/css" media="screen">
+<div id="form_popup" class="social_bar_dialog" style="display:none">
+  <a href="23809777.html#" id="form_popup_close_button" class="close_button"><img src="../../../../../images/icons/x_24x24.png"></a>
+  <div id="form_popup_content" style="display:none">
+    <iframe id="form_show_iframe" border="0" frameborder="0"></iframe>
+  </div>
+  <script type="text/javascript" src="../../../../../javascripts/form_popup.js"></script><script type="text/javascript">
+    var formPopup = new FormPopup("/public/widgets/forms/{id}/2igrftvvte?channel=web");
+    Event.observe(window, 'message', formPopup.onMessage.bind(formPopup));
+  </script>
+</div>
+
+</body>
+</html>
