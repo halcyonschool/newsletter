@@ -15,7 +15,7 @@ function getWeather() {
       html = '<h2><i class="icon-'+weather.code+'"></i><p> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
       html += '<br><br>'+weather.city+', '+weather.region+'';
       html += '<br><br>'+weather.currently+'';
-      html += '<br><br>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'';
+      html += '<br><br>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'v2';
   
       $("#weather").html(html);
     },
