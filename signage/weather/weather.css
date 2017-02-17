@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  padding: 40px 0;
+  padding: 0px 0; /*o riginally 45 */
   /*font: 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
   font-size: 24px;
   color: #989898;
