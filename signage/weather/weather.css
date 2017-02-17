@@ -31,7 +31,7 @@ body {
   padding: 0px 0; /*o riginally 45 */
   /*font: 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
   font-size: 24px;
-  color: #989898;
+  color: #3176BC;
 }
 
 #weather {
@@ -42,7 +42,7 @@ body {
 }
 
 i {
-  color: #989898;
+  color: #3176BC;
   font-family: weather;
   font-size: 300px;
   font-weight: normal;
@@ -102,7 +102,7 @@ i {
 
 #weather h2 {
   margin: 0 0 8px;
-  color: #989898;
+  color: #3176BC;
   font-size: 100px;
   font-weight: 300;
   text-align: center;
@@ -115,7 +115,7 @@ i {
 }
 
 #weather li {
-  background: #989898;
+  background: #3176BC;
   background: rgba(255,255,255,0.90);
   padding: 20px;
   display: inline-block;
