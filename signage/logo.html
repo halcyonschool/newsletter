@@ -6,18 +6,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
 	<style type="text/css">
-		img.logo {
+		img {
 			background-position: top left;
-			/*width: 30%;*/
+			/* width: 80%; */
+			height: 188px;
+		}
+
+		.stage {
+		  -webkit-perspective: 1000; 
+		}
+
+		.flashcard {
+		  height: 300px;  
+		  width: 500px; 
+		  -webkit-transform-style: preserve-3d;  
+		  transition: all 0.9s;               
+		  -webkit-transition: all 0.9s;
+		}
+
+		.flipped, .back {
+		  transform: rotateX(180deg);
+		  -webkit-transform: rotateX(180deg); 
+		}
+
+		.front, .back {
+		  height: 300px;          
+		  width: 500px;
+		  position: absolute;    
+		  text-align: center;   
+		  -webkit-backface-visibility: hidden;       
+		}
+
+		.front p, .back p {
+		  margin-top: 0%;       
+		  font-size: 0em;
 		}
 	</style>
 </head>
 
 <body>
-	<!-- <img class="logo" src="halcyon-logo-main.png"> -->
-	<img class="logo" src="his-gif.gif">
+
+<div class="stage">
+	  <div class="flashcard">
+		    <div class="front">
+		     	<img src="https://halcyonschool.github.io/newsletter/signage/his-gif.gif">
+		  	</div>
+		  	<div class="back">
+		   		<img src="https://halcyonschool.github.io/newsletter/signage/his-gif.gif">
+		 	</div>
+	 </div>  
+ </div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  setInterval(function() {
+		    $('.flashcard').toggleClass('flipped');
+		  },5000);
+		});
+	</script>
+
 </body>
 
 </html>
