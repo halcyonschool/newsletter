@@ -20,8 +20,8 @@
 		}
 
 		.flashcard {
-		  height: 300px;  
-		  width: 500px; 
+		  height: 100px;          
+		  width: 334px; 
 		  -webkit-transform-style: preserve-3d;  
 		  transition: all 0.9s;               
 		  -webkit-transition: all 0.9s;
@@ -33,8 +33,8 @@
 		}
 
 		.front, .back {
-		  height: 300px;          
-		  width: 500px;
+		  height: 100px;          
+		  width: 334px;
 		  position: absolute;    
 		  text-align: center;   
 		  -webkit-backface-visibility: hidden;       
@@ -64,7 +64,7 @@
 		$(document).ready(function() {
 		  setInterval(function() {
 		    $('.flashcard').toggleClass('flipped');
-		  },5000);
+		  },60000); // every minute
 		});
 	</script>
 
