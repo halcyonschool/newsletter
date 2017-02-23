@@ -46,3 +46,930 @@
 	failed with error code 404 (not found)
 
 ---------------------
+
+23/02/2017, 12:48:45 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:48:50 - ERROR: Download of "https://www.smore.com/app/marketing/test_pricing",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/pricing.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:49:02 - ERROR: Download of "https://www.smore.com/app/marketing/education_bulk",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-bulk_page_source=pricing_page_bottom_banner.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:49:59 - ERROR: Download of "https://www.smore.com/app/bulk/submit_request_quote_step1",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-form.html",
+	failed with error code 500 (internal server error)
+23/02/2017, 12:50:26 - ERROR: Download of "https://www.smore.com/apple-touch-icon-72x72.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:26 - ERROR: Download of "https://www.smore.com/apple-touch-icon-114x114.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:27 - ERROR: Download of "https://www.smore.com/apple-touch-icon.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:30 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:30 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot?iefix",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:30 - ERROR: Download of "https://www.smore.com/fonts/FontName.woff",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:30 - ERROR: Download of "https://www.smore.com/fonts/FontName.ttf",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:50:30 - ERROR: Download of "https://www.smore.com/fonts/FontName.svg",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 12:54:57 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=signup_popover.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:55:02 - ERROR: Download of "https://www.smore.com/app/marketing/test_pricing",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/pricing.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:55:12 - ERROR: Download of "https://www.smore.com/app/marketing/education_bulk",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-bulk_page_source=pricing_page_bottom_banner.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:55:30 - ERROR: Download of "https://www.smore.com/app/bulk/submit_request_quote_step1",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-form.html",
+	failed with error code 500 (internal server error)
+23/02/2017, 12:56:01 - ERROR: Download of "https://www.smore.com/apple-touch-icon.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:01 - ERROR: Download of "https://www.smore.com/apple-touch-icon-72x72.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:01 - ERROR: Download of "https://www.smore.com/apple-touch-icon-114x114.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:04 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:04 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot?iefix",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:04 - ERROR: Download of "https://www.smore.com/fonts/FontName.woff",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:04 - ERROR: Download of "https://www.smore.com/fonts/FontName.ttf",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 12:56:04 - ERROR: Download of "https://www.smore.com/fonts/FontName.svg",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:10:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:10:46 - ERROR: Download of "https://www.smore.com/app/marketing/test_pricing",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/pricing.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:11:45 - ERROR: Download of "https://www.smore.com/app/marketing/education_bulk",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-bulk_page_source=pricing_page_bottom_banner.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:36 - ERROR: Download of "https://www.smore.com/app/bulk/submit_request_quote_step1",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-form.html",
+	failed with error code 500 (internal server error)
+23/02/2017, 13:12:42 - ERROR: Download of "https://www.smore.com/apple-touch-icon.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:42 - ERROR: Download of "https://www.smore.com/apple-touch-icon-72x72.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:42 - ERROR: Download of "https://www.smore.com/apple-touch-icon-114x114.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/clippy-js.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:45 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:45 - ERROR: Download of "https://www.smore.com/fonts/FontName.eot?iefix",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:45 - ERROR: Download of "https://www.smore.com/fonts/FontName.woff",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:45 - ERROR: Download of "https://www.smore.com/fonts/FontName.ttf",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+23/02/2017, 13:12:45 - ERROR: Download of "https://www.smore.com/fonts/FontName.svg",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/css/clippyjs.css",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:12:55 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:13:01 - ERROR: Download of "https://www.smore.com/app/marketing/test_pricing",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/pricing.html",
+	failed with error code 404 (not found)
+23/02/2017, 13:13:08 - ERROR: Download of "https://www.smore.com/app/marketing/education_bulk",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/educators-bulk-bulk_page_source=pricing_page_bottom_banner.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:14:05 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=powered.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:14:17 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=powered.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:14:27 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:14:42 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:14:56 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:15:08 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:15:22 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:15:34 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:15:46 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:00 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:09 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:17 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:22 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:38 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:44 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:16:53 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:01 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:07 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:13 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:20 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:25 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:37 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:47 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:17:56 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:07 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:17 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:21 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:39 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:46 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:54 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:18:59 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:06 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:12 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:18 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:26 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:34 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:49 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:19:58 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:11 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:17 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:23 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:28 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:34 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:39 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:47 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:20:53 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:02 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:06 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:13 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:17 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:25 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:31 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:46 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:52 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:21:56 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:03 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:10 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:14 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:20 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:24 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:37 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:42 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:47 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:22:54 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:00 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:09 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:22 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:33 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:45 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:23:59 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:24:10 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=learn_more_mobile.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:24:21 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:24:36 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:24:49 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=toolbar_signup.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:24:59 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:25:12 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:25:24 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:25:37 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:25:50 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 13:26:02 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:43:05 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:43:16 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:43:27 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:43:37 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:43:49 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:00 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:10 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:22 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:32 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:43 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:44:55 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:06 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:16 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:27 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:38 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:49 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:45:59 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:46:10 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:46:21 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:46:35 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:46:45 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:46:57 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:47:09 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:47:20 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:47:31 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:47:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:47:52 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:03 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:14 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:25 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:35 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:46 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:48:57 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:49:08 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:49:18 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:49:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:49:41 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:49:54 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:50:06 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:50:18 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:50:30 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:50:42 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:50:53 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=slogan.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:51:03 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:51:14 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+23/02/2017, 14:51:25 - ERROR: Download of "https://www.smore.com/favicon.ico",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/index-ref=logo.html",
+	failed with error code 404 (not found)
+
+---------------------
