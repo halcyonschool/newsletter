@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
+    function pad(n, width, z) {
+		z = z || '0';
+		n = n + '';
+		return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
     function startTime() {
         var today = new Date();
         var h = today.getHours();
@@ -16,7 +21,7 @@
         s = checkTime(s);
         document.getElementById('txt').innerHTML =
         // h + ":" + m + ":" + s;
-        h + "" + m;
+        pad(h,2) + "" + m;
         var t = setTimeout(startTime, 500);
     }
     function checkTime(i) {
