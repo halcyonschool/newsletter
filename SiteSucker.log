@@ -973,3 +973,39 @@
 	failed with error code 404 (not found)
 
 ---------------------
+
+02/03/2017, 23:46:25 - ERROR: Download of "https://www.smore.com/external_image?url=https://img.youtube.com/vi/22LY8KbfgME/hqdefault.jpg",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/2zn8d-morning-notes.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+02/03/2017, 23:54:10 - ERROR: Download of "https://www.smore.com/external_image?url=http://0901.static.prezi.com/preview/sgf2lejbkx2wiallxze3gdwvmqadw6rhlm5vs2oll757hbaoaxlq_0_0.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/hmnuh-morning-notes.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+02/03/2017, 23:54:17 - ERROR: Download of "https://www.smore.com/external_image?url=http://0901.static.prezi.com/preview/sgf2lejbkx2wiallxze3gdwvmqadw6rhlm5vs2oll757hbaoaxlq_0_0.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/gs0za-morning-notes.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+02/03/2017, 23:54:24 - ERROR: Download of "https://www.smore.com/external_image?url=http://0901.static.prezi.com/preview/sgf2lejbkx2wiallxze3gdwvmqadw6rhlm5vs2oll757hbaoaxlq_0_0.png",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/fbjse-morning-notes.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+03/03/2017, 00:03:03 - ERROR: Download of "https://www.smore.com/external_image?url=",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/2n728-morning-notes.html",
+	failed with error code 404 (not found)
+
+---------------------
+
+03/03/2017, 00:06:51 - ERROR: Download of "https://www.smore.com/external_image?url=http://static.squarespace.com/static/509b8d20e4b0592f6710899e/509cc655e4b0e15f9ab0e297/50f5a416e4b0e960183d3441/?format=500w",
+	referenced from "/Users/andrewhowden/newsletter/www.smore.com/b399-morning-notes.html",
+	failed with error code 400 (bad request)
+
+---------------------

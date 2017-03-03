@@ -119,7 +119,7 @@
 
 
                <script type="text/javascript"
-                       src="https://www.smore.com/app/reporting/view/qbrna?slug=&amp;httpref=nb2hi4dthixs653xo4xhg3lpojss4y3pnuxxcytsnzqq%3D%3D%3D%3D&amp;sep_type="
+                       src="app/reporting/view/qbrna-slug=&amp;httpref=&amp;sep_type=.js"
                        async="async">//</script>
 
 
@@ -204,6 +204,60 @@
     /></noscript>
     <!-- DO NOT MODIFY -->
     <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript">
+        // Setup the script
+        window.analytics || (window.analytics = []), window.analytics.methods = ["identify", "track", "trackLink", "trackForm", "trackClick", "trackSubmit", "page", "pageview", "ab", "alias", "ready", "group", "on", "once", "off"], window.analytics.factory = function (t) {
+            return function () {
+                var a = Array.prototype.slice.call(arguments);
+                return a.unshift(t), window.analytics.push(a), window.analytics
+            }
+        };
+        for (var i = 0; window.analytics.methods.length > i; i++) {
+            var method = window.analytics.methods[i];
+            window.analytics[method] = window.analytics.factory(method)
+        }
+        window.analytics.load = function (t) {
+            var a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = ("https:" === document.location.protocol ? "https://" : "http://") + "d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/" + t + "/analytics.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n)
+        }, window.analytics.SNIPPET_VERSION = "2.0.8",
+                window.analytics.load('0jbpcl8iua');
+
+
+        /*** Profitwell integration */
+        try {
+            (function (i, s, o, g, r, a, m) {
+                i['ProfitWellObject'] = r;
+                i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
+                a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://dna8twue3dlxq.cloudfront.net/js/profitwell.js', 'profitwell');
+            profitwell('auth_token', '813c1ae8446b8660574535dd5584bb17');
+
+        } catch (e) {
+            // do nothing here, to prevent errors caused by profitwell
+        }
+
+        // Identify the user if we have a logged in user
+
+        /*** Raygun integration ***/
+        window.__debugMode = "False";
+
+
+        try {
+            window.analytics.page();
+        } catch (e) {
+            // nothing here
+        }
+
+    </script>
+
 
 </head>
 <body class="background-fill  
@@ -1036,65 +1090,6 @@
      
 
         
-
-
-    
-    
-    
-
-    <script type="text/javascript">
-        // Setup the script
-        window.analytics || (window.analytics = []), window.analytics.methods = ["identify", "track", "trackLink", "trackForm", "trackClick", "trackSubmit", "page", "pageview", "ab", "alias", "ready", "group", "on", "once", "off"], window.analytics.factory = function (t) {
-            return function () {
-                var a = Array.prototype.slice.call(arguments);
-                return a.unshift(t), window.analytics.push(a), window.analytics
-            }
-        };
-        for (var i = 0; window.analytics.methods.length > i; i++) {
-            var method = window.analytics.methods[i];
-            window.analytics[method] = window.analytics.factory(method)
-        }
-        window.analytics.load = function (t) {
-            var a = document.createElement("script");
-            a.type = "text/javascript", a.async = !0, a.src = ("https:" === document.location.protocol ? "https://" : "http://") + "d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/" + t + "/analytics.min.js";
-            var n = document.getElementsByTagName("script")[0];
-            n.parentNode.insertBefore(a, n)
-        }, window.analytics.SNIPPET_VERSION = "2.0.8",
-                window.analytics.load('0jbpcl8iua');
-
-
-        /*** Profitwell integration */
-        try {
-            (function (i, s, o, g, r, a, m) {
-                i['ProfitWellObject'] = r;
-                i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m);
-            })(window, document, 'script', 'https://dna8twue3dlxq.cloudfront.net/js/profitwell.js', 'profitwell');
-            profitwell('auth_token', '813c1ae8446b8660574535dd5584bb17');
-
-        } catch (e) {
-            // do nothing here, to prevent errors caused by profitwell
-        }
-
-        // Identify the user if we have a logged in user
-
-        /*** Raygun integration ***/
-        window.__debugMode = "False";
-
-
-        try {
-            window.analytics.page();
-        } catch (e) {
-            // nothing here
-        }
-
-    </script>
-
 
 </body>
 </html>
